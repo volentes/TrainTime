@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TrainTime</title>
+  <!--Bootstap Reference -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel ="stylesheet" type="text/css" href ="assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+  <!--Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+    <script src="http://momentjs.com/downloads/moment.js"></script>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<!--Jumbrotron -->
+    <div class="jumbotron">
+      <h1 class="display-3">Anytime is Train Time</h1>
+    </div>
+    <div id ="gif">
+      <iframe src="https://giphy.com/embed/g1cpLl3EmfylW"
+      width="500" height="300" align ="center" frameBorder="0" class="giphy-embed"
+      allowFullScreen></iframe>
+      <p><a href="https://giphy.com/gifs/trains-g1cpLl3EmfylW"></a></p>
+  </div>
+
+<!--The train Schedule -->
+  <div>
+    <h2>Current Train Schedule</h2>
+  </div>
+
+<!-- Train Schedule Table -->
+
+  <table class="table table-hover" id="train-table">
+      <tr>
+      <th>Train Name</th>
+      <th>Destination</th>
+      <th>Frequency</th>
+      <th>Next Arrival</th>
+      <th>Minutes Away</th>
+      </tr>
+  </table>
+
+<!-- Adding a train to the table -->
+
+  <div>
+    <h3 class="panel-title">Add a Train</h3>
+  </div>
+
+<!--Form to add train to table -->
+
+    <form>
+      <!--The Train Name -->
+      <label for="train-name-input">Train Name</label>
+      <input class="form-control" id="name-input" type="text">
+      <!--The Train's Destination -->
+      <label for="destination-input">Destination</label>
+      <input class="form-control" id="destination-input" type="text">
+      <!--The Train Time -->
+      <label for="time-input">First Train Time (HH:mm- military time)</label>
+      <input class="form-control" id="time-input" type="text">
+      <!--The Train's Frequency -->
+      <label for="frequency-input">Frequency</label>
+      <input class="form-control" id="frequency-input" type="text">
+      <!--The Submit Button -->
+      <input class="btn btn-primary" id="submit-btn" type="submit" value="submit">
+    </form>
+
+
+</div>
+
+<!--Link to the Javascript/Jquery reference -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src= "assets/train.js"></script>
+
+</body>
+</html>

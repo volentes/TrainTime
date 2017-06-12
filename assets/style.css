@@ -1,0 +1,96 @@
+body {
+  background: url("../assets/clouds.jpg") no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ }
+
+.jumbotron {
+  margin-top: 40px;
+  overflow: auto;
+  clear: both;
+  padding-left: 180px;
+  width: 98%;
+  margin-left: 13px;
+}
+h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 150px;
+  width: 98%;
+}
+
+#gif {
+  float: right;
+  clear: both;
+  margin-bottom: 90px;
+  margin-top: -280px;
+  margin-right: 40px;
+}
+
+/*.panel-heading {
+  float: left;
+  clear: both;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  align: center;
+}*/
+
+h2 {
+  width: 98%;
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 13px;
+  background-color: #d3d3d3;
+  padding-left: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+h3 {
+  width: 50%;
+  font-family: 'Lobster Two', cursive;
+  font-size: 30px;
+  text-align: center;
+  background-color: #d3d3d3;
+  margin-left: 347px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.table-table-hover {
+  margin: 30px;
+  border: 2px;
+  margin-right: 100px;
+}
+
+th {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+td{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  float: left;
+  clear: both;
+  margin-left: 350px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+ label {
+   font-family: 'Abril Fatface', cursive;
+   font-size: 20px;
+ }
+
+ #submit-btn {
+   margin-top: 40px;
+   margin-left: 320px;
+ }
